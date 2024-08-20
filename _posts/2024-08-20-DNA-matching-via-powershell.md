@@ -49,3 +49,8 @@ Write-Host "Your sequences match $numMatches times"
 Clear-Variable sequence1
 Clear-Variable sequence2
 ```
+
+Sample:
+
+![Output](assets/img/DNAscript.png)
+
