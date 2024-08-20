@@ -6,7 +6,9 @@ mathjax: true
 author: Julian Kusin
 ---
 
-## Reads in a sequence length to compare two random DNA sequences and shows you where they match according to AT/GC pairs
+## Supply a string length to compare two random DNA sequences 
+### Shows you where they match according to AT/GC pairs
+
 ```powershell
 [int]$seqLength = Read-Host "Enter the length of the DNA sequences: "
 [array]$nuctides = "A", "C", "T", "G"
