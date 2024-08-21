@@ -91,6 +91,9 @@ social-network-links:
 # --- General options --- #
 ###########################
 
+#blog page
+paginate_path: "/blog/page:num/"
+
 # Select which social network share links to show in posts
 share-links-active:
   twitter: false
