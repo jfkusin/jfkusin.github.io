@@ -21,5 +21,7 @@ because that would make \\(ab = 0\\). Thefore \\(b\\) is a zero divisor.
 
 We could do the same for \\(b(ca) = 0\\) to show \\(a\\) is also a zero divisor. This completes our proof.
 
-I think there is a bit of redundancy in this proof but it makes the proof clearer in some ways.
+I think there is a bit of redundancy in this proof but it makes the proof clearer in some ways. I'm using Gallian's *Contemporary Abstract Algebra*
+for definitions. If you want to know more about proofs in general I recommend Velleman's *How to Prove It: A Structured Approach*. 
+
 
