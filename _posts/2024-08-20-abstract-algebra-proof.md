@@ -19,5 +19,7 @@ From \\(a(bc) = 0\\) we get \\(a = 0\\) or \\(bc = 0\\). \\(a\\) can't equal \\(
 is a  non-zero element of \\(R\\) by definition of being a zero divisor. If \\(bc = 0\\) then \\(b\\) is a zero divisor or \\(b = 0\\), but \\(b\\) can't equal \\(0\\) 
 because that would make \\(ab = 0\\). Thefore \\(b\\) is a zero divisor. 
 
-We can do the same for \\(b(ca) = 0\\) to show \\(a\\) is also a zero divisor. This completes our proof.
+We could do the same for \\(b(ca) = 0\\) to show \\(a\\) is also a zero divisor. This completes our proof.
+
+I think there is a bit of redundancy in this proof but it makes the proof clearer in some ways.
 
