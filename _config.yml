@@ -21,6 +21,7 @@ author: Julian Kusin
 
 navbar-links:
   About: "about"
+  Blog: "blog"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
