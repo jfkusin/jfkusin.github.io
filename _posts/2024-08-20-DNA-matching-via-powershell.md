@@ -52,5 +52,5 @@ Clear-Variable sequence2
 
 Sample:
 
-![Output](assets/img/DNAscript.png)
+![Output](https://lavasum.com/assets/img/DNAscript.png)
 
