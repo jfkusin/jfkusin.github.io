@@ -54,3 +54,6 @@ Sample:
 
 ![Output](https://lavasum.com/assets/img/DNAscript.png)
 
+I recommend [Idera's PowerShell tutorials](https://blog.idera.com/database-tools/chapter-9-functions/) for instilling the 'PowerShell way' to do things.
+Unfortunately it's a hard to navigate through the tutorial. There is also the classic [*PowerShell in a Month of Lunches*](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-third-edition).
+The third edition is the most polished. 
