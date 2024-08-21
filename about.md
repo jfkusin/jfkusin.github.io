@@ -8,4 +8,4 @@ subtitle: A site for math, nature, and learning
 
 - I live in the Bay Area
 - I have many interests
-- You can email me at juliankusin@protonmail.com
+- You can email me at juliankusin@lavasum.com
