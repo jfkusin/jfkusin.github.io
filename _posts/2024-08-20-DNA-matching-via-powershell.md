@@ -55,7 +55,7 @@ Sample:
 ![Output](https://lavasum.com/assets/img/DNAscript.png)
 
 I recommend [Idera's PowerShell tutorials](https://blog.idera.com/database-tools/chapter-9-functions/) for instilling the 'PowerShell way' to do things.
-Unfortunately it's a hard to navigate through the tutorial. A possible workaround is to navigate via the url. To find Chapter 1 without knowing the full 
+Unfortunately it's a bit hard to navigate through the tutorial. A possible workaround is to navigate via the url. To find Chapter 1 for example without knowing the full 
 url/chapter name, you can just navigate to 'https//<i></i>blog.idera.com/database-tools/chapter-1' and it will bring you to https<i></i>//blog.idera.com/database-tools/chapter-1-the-powershell-console
 luckily. 
 
