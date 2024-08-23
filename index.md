@@ -8,7 +8,7 @@ mathjax: true
 
 | Number | Next number | Previous number |
 | :------ |:--- | :--- |
-| [![](/assets/img/mathlinksbutton.png)](https://codecademy.com) | Six | Four |
+| [![](/assets/img/mathlinksbutton.png)](/mathlinks.md) | Six | Four |
 | Ten | Eleven | Nine |
 | Seven | Eight | Six |
 | Two | Three | One |
