@@ -3,7 +3,7 @@ layout: page
 title: LAVASUM
 subtitle: A site for math, nature, and learning
 mathjax: true
-css: "/assets/css/custom-styles.css"
+css: /assets/css/custom-styles.css
 ---
 
 
