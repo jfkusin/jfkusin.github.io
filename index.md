@@ -6,7 +6,7 @@ mathjax: true
 ---
 
 
-<div class="center-table" markdown>
+
   
 | Number | Next number | Previous number |
 | :------ |:--- | :--- |
@@ -15,4 +15,3 @@ mathjax: true
 | Seven | Eight | Six |
 | Two | Three | One |
   
-</div>
