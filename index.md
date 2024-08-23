@@ -6,14 +6,13 @@ mathjax: true
 css: /style/indexlayout.css
 ---
 
+<div style="margin-left: auto;
+            margin-right: auto;
+            width: 30%">
 
-<div class="center-table" markdown>
-  
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-  
+| Item         | Price | # In stock |
+|--------------|:-----:|-----------:|
+| Juicy Apples |  1.99 |        739 |
+| Bananas      |  1.89 |          6 |
+
 </div>
