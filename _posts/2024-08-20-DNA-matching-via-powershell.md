@@ -2,6 +2,9 @@
 layout: post
 title: Matching DNA strands in PowerShell
 tags: [programming, DNA, PowerShell]
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/DNAscript.png
+share-img: /assets/img/DNAscript.png
 comments: true
 mathjax: true
 author: Julian Kusin
