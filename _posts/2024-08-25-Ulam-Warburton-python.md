@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ulam-Warburton automaton in Python
-tags: [programming, Python]
+tags: [math, programming, Python]
 cover-img:
 thumbnail-img: /assets/img/ulam.png
 share-img: /assets/img/ulam.png
