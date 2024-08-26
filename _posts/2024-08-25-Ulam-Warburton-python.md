@@ -160,6 +160,6 @@ for row in board:
 ##### After many more:
 ![Output](https://lavasum.com/assets/img/ulam2.png)
 
-You can try a more professional version along with others at [OEIS](http%3A%2F%2Foeis.org%2FA139250%2Fa139250.anim.html&v=_UtCli1SgjI). To try the Ulam-Warburton, select it from the Main Sequence dropdown. 
+You can try a more professional version along with others at [OEIS](https://oeis.org/A139250/a139250.anim.html). To try the Ulam-Warburton, select it from the Main Sequence dropdown. 
 
 You can read more about this automaton on [Wikipedia](https://en.wikipedia.org/wiki/Ulam%E2%80%93Warburton_automaton) and watch on [Numberphile](https://www.youtube.com/watch?v=_UtCli1SgjI).
