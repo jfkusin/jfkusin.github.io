@@ -2,6 +2,9 @@
 layout: post
 title: Ulam-Warburton automaton in Python
 tags: [programming, Python]
+cover-img:
+thumbnail-img: /assets/img/ulam.png
+share-img: /assets/img/ulam.png
 comments: true
 mathjax: true
 author: Julian Kusin
