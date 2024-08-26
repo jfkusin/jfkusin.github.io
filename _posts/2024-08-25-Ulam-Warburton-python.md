@@ -11,7 +11,7 @@ author: Julian Kusin
 ---
 
 ## This automaton grows on a square grid in a fractal pattern
-#### This is a rough draft I did while learning Python. It is unoptimized but pedagogical.
+#### This is a rough draft I did while learning Python. It is unoptimized but pedagogical
 #### You can make the size variable larger to expand the board, but this code gets slow for large boards
 
 ```python
