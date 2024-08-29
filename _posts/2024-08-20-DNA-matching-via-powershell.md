@@ -1,7 +1,10 @@
 ---
 layout: post
 title: Matching DNA strands in PowerShell
-tags: [DNA, PowerShell]
+tags: [programming, DNA, PowerShell]
+cover-img:
+thumbnail-img: /assets/img/DNAscript.png
+share-img: /assets/img/DNAscript.png
 comments: true
 mathjax: true
 author: Julian Kusin
@@ -49,3 +52,15 @@ Write-Host "Your sequences match $numMatches times"
 Clear-Variable sequence1
 Clear-Variable sequence2
 ```
+
+Sample:
+
+![Output](https://lavasum.com/assets/img/DNAscript.png)
+
+I recommend [Idera's PowerShell tutorials](https://blog.idera.com/database-tools/chapter-9-functions/) for instilling the 'PowerShell way' to do things.
+Unfortunately it's a bit hard to navigate through the tutorial. A possible workaround is to navigate via the url. To find Chapter 1 for example without knowing the full 
+url/chapter name, you can just navigate to 'https//<i></i>blog.idera.com/database-tools/chapter-1' and it will bring you to https<i></i>//blog.idera.com/database-tools/chapter-1-the-powershell-console
+luckily. 
+
+There is also the classic [*PowerShell in a Month of Lunches*](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-third-edition).
+The third edition is the most polished. 
