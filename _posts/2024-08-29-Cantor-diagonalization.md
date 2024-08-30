@@ -14,7 +14,7 @@ author: Julian Kusin
 
 First recognize that there is a **set** of all natural numbers. The concept of a set is *critical* to this proof. This a good thing because sets are a very easy to understand concept and provide most of the 
 reasoning in the proof. The set of natural numbers, called \\(\mathbb{N}\\), simply means we can completely collect all of the natural numbers. Does that mean I write down every natural number from 1...5004...999000... and fill up 
-endless pages? No. It means I simply recognize there is a way to conceptually talk about this complete collection and write about it using mathematical symbols in a consistent way. That's all we conceptually require of \\(\mathbb{N}\\) and sets.
+endless pages? No. It means I simply recognize there is a way to conceptually talk about this complete collection and write about it using mathematical symbols in a consistent way. That's all we conceptually require of \\(\mathbb{N}\\), the set of all natural numbers, and sets.
 
 We intuitively order \\(\mathbb{N}\\) in the usual way (1, 2, 3...) as rows in the table below (we'll ingore 0 here, it changes nothing). Next to each natural number, we will write a unique real number from the set of all real numbers \\(\mathbb{R}\\) between 0 and 1, written as \\((0,1)\\). We don't need all the real numbers, just this subset of them, to show all the naturals run out before "naming" all the reals. We do this graphically with a table:
 
@@ -30,7 +30,7 @@ We exhaust every natural number by stating the infinite set of natural numbers, 
 We've used all of \\(\mathbb{N}\\) in the first column. 
 
 Now we want to show there is a unique real number from \\((0,1)\\) for each natural number. If we can do that and then show there is at least one extra real number after exhausting all of the natural numbers, we will have shown the real numbers
-are countably infinite (given the Continuum Hypothesis which says there is no set with "size" (cardinality) between \\(\mathbb{N}\\) and \\(\mathbb{R}\\)). In fact we can show a infinite number of real numbers will be extras after
+are countably infinite (given the Continuum Hypothesis which says there is no set with "size" (cardinality) between \\(\mathbb{N}\\) and \\(\mathbb{R}\\)). In fact we can show an infinite number of real numbers will be extras after
 exhausting all of the natural numbers.
 
 To show there is at least one extra real number, first highlight digits in the main diagonal, one for every row of \\(\mathbb{N}\\), as shown:
