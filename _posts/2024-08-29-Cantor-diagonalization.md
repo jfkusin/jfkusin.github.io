@@ -2,8 +2,8 @@
 layout: post
 title: Intuitive proof of Cantor's Diagonalization
 subtitle: 
-cover-img: /assets/img/diagon.png
-thumbnail-img: /assets/img/diagonalback.png
+cover-img: /assets/img/diagonalback.png
+thumbnail-img: /assets/img/diagon.png 
 share-img: /assets/img/diagon.png
 mathjax: true
 tags: [math, sets, proof]
