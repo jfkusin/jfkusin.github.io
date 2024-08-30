@@ -6,7 +6,7 @@ cover-img: /assets/img/diagon.png
 thumbnail-img: /assets/img/diagonalback.png
 share-img: /assets/img/diagon.png
 mathjax: true
-tags: [math, abstract algebra, proof]
+tags: [math, sets, proof]
 author: Julian Kusin
 ---
 
