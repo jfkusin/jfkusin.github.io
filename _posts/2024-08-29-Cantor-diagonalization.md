@@ -20,7 +20,9 @@ write down a unique real number  next to each natural number? Real numbers have 
 
 We can list all the naturals quite intuively as shown in the table because of their well-ordering property. Actually, we can in principle order any set this way (a well-ordering, a list, a column) by assuming the Axiom of Choice. We don't need the Axiom of Choice to list the naturals since their ordering is more basic (from the Axiom of Induction or just intuition really). Our method is to list the naturals first, assign a unique real from \\((0,1)\\) to each, and then find an extra real not on the list. Rather than use the iterated method of generating reals, we choose less arbitrary ones for simplicity's sake. This doesn't change the proof.  We do this graphically with a table:
 
-|\\(\mathbb{N}\\) |\\((0,1)\\)   | 
+*The table is a unique graphical representation of the set* *Note: we use \\(\subset(0,1)\\) to show the second column is a proper subset of the reals from 0 to 1. We can't possibly list all of them. If we could, our proof would fail.
+
+|\\(\mathbb{N}\\) |\\(\subset(0,1)\\)   | 
 --- | --- |
 |1|0.3141592...|
 |2|0.4669201...|
@@ -35,7 +37,7 @@ are uncountably infinite.
 
 To show there is at least one extra real number, first highlight digits in the main diagonal, one for every row of \\(\mathbb{N}\\), as shown:
 
-|\\(\mathbb{N}\\) |\\((0,1)\\)   | 
+|\\(\mathbb{N}\\) |\\(\subset(0,1)\\)   | 
 --- | --- |
 |1|0.**3**141592...|
 |2|0.4**6**69201...|
