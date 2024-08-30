@@ -16,7 +16,7 @@ First recognize that there is a **set** of all natural numbers. The concept of a
 reasoning in the proof. The set of natural numbers, called \\(\mathbb{N}\\), simply means we can completely collect all of the natural numbers. Does that mean I write down every natural number from 1...5004...999000... and fill up 
 endless pages? No. It means I simply recognize there is a way to conceptually talk about this complete collection and write about it using mathematical symbols in a consistent way. That's all we conceptually require of \\(\mathbb{N}\\), the set of all natural numbers, and sets.
 
-We intuitively order \\(\mathbb{N}\\) in the usual way (1, 2, 3...) as rows in the table below (we'll ingore 0 here, it changes nothing). Next to each natural number, we will write a unique real number from the set of all real numbers \\(\mathbb{R}\\) between 0 and 1, written as \\((0,1)\\). We don't need all the real numbers, just this subset of them, to show all the naturals run out before "naming" all the reals. We do this graphically with a table:
+We intuitively order \\(\mathbb{N}\\) in the usual way (1, 2, 3...) as rows in the table below (we'll ignore 0 here, it changes nothing). Next to each natural number, we'll write a unique real number from the set of all real numbers \\(\mathbb{R}\\) between 0 and 1, written as \\((0,1)\\). We don't need all the real numbers, just this subset of them, to show all the naturals run out before "naming" all the reals. We do this graphically with a table:
 
 |\\(\mathbb{N}\\) |\\((0,1)\\)   | 
 --- | --- |
@@ -26,7 +26,7 @@ We intuitively order \\(\mathbb{N}\\) in the usual way (1, 2, 3...) as rows in t
 |4|0.2718281...|
 |⋮| ⋮           |
 
-We exhaust every natural number by stating the infinite set of natural numbers, \\(\mathbb{N}\\), forms the initial rows of our table. That is, however large the collection of all real numbers is, each one has it's own row in the table.
+We exhaust every natural number by stating the infinite set of natural numbers, \\(\mathbb{N}\\), forms column 1, with a unique natural starting each row. However large the collection of all real numbers is, each one has it's own row in the table.
 We've used all of \\(\mathbb{N}\\) in the first column. 
 
 Now we want to show there is a unique real number from \\((0,1)\\) for each natural number. If we can do that and then show there is at least one extra real number after exhausting all of the natural numbers, we will have shown the real numbers
