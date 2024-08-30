@@ -28,10 +28,9 @@ We can list all the naturals quite intuively as shown in the table because of th
 |4|0.2718281...|
 |⋮| ⋮           |
 
-We exhaust every natural number in doing so. However large the set of all natural numbers is, each one has it's own row in the table.
 We've used all of \\(\mathbb{N}\\) in the first column. 
 
-We will be able to show an infinite number of real numbers will be not on this completed list. By doing so we will show the real numbers
+We will now show there's an extra real not on this completed list of naturals, and soon we'll be able to show an infinite number of real numbers are absent too. By doing so we will show the real numbers
 are uncountably infinite.
 
 To show there is at least one extra real number, first highlight digits in the main diagonal, one for every row of \\(\mathbb{N}\\), as shown:
