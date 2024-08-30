@@ -10,7 +10,7 @@ tags: [math, sets, proof]
 author: Julian Kusin
 ---
 
-### This is the simplest proof in my opinion that the natural numbers are countably infinite but the real numbers are uncountably infinite:
+### A simple but detailed that the natural numbers are countably infinite but the real numbers are uncountably infinite:
 
 First recognize that there is a **set** of all natural numbers. The concept of a set is *critical* to this proof. This a good thing because sets are a very easy to understand concept and provide much of the 
 reasoning in the proof. It's what allows us to talk about *all* the natural numbers. Does that mean we can actually write all of them down? No. But we can describe the set of all of them. The set of natural numbers, called \\(\mathbb{N}\\), simply means we can completely collect all of the natural numbers. Does that mean I write down every natural number from 1...5004...999000... and fill up 
