@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Intuitive proof of Cantor's Diagonalization
-subtitle: 
+title: Simple but detailed proof of Cantor's Diagonalization
+subtitle: Showing the reals are a greater infinity than the naturals
 cover-img: /assets/img/diagonalback.png
 thumbnail-img: /assets/img/diagon.png 
 share-img: /assets/img/diagon.png
@@ -14,9 +14,12 @@ author: Julian Kusin
 
 First recognize that there is a **set** of all natural numbers. The concept of a set is *critical* to this proof. This a good thing because sets are a very easy to understand concept and provide most of the 
 reasoning in the proof. The set of natural numbers, called \\(\mathbb{N}\\), simply means we can completely collect all of the natural numbers. Does that mean I write down every natural number from 1...5004...999000... and fill up 
-endless pages? No. It means I simply recognize there is a way to conceptually talk about this complete collection and write about it using mathematical symbols in a consistent way. That's all we conceptually require of \\(\mathbb{N}\\), the set of all natural numbers, and sets.
+endless pages? No. It means I simply recognize there is a way to conceptually talk about this complete collection and write about it using mathematical symbols in a consistent way. We call this set \(\mathbb{N}\\), the set of all natural numbers.
 
-We intuitively order \\(\mathbb{N}\\) in the usual way (1, 2, 3...) as rows in the table below (we'll ignore 0 here, it changes nothing). Next to each natural number, we'll write a unique real number from the set of all real numbers \\(\mathbb{R}\\) between 0 and 1, written as \\((0,1)\\). We don't need all the real numbers, just this subset of them, to show all the naturals run out before "naming" all the reals. We do this graphically with a table:
+We intuitively order \\(\mathbb{N}\\) in the usual way (1, 2, 3...) as rows in the table below (we'll ignore 0 here, it changes nothing). Next to each natural number, we're going to write a unique real number from the set of all real numbers \\(\mathbb{R}\\) between 0 and 1, written as \\((0,1)\\). We don't need all the real numbers, just this subset of them, to show all the naturals run out before "naming" all the reals. How can we intuitively 
+write down a unique real number  next to each natural number? Real numbers have a property that strictly between any two different reals, there is another real number. This property gives us a repeatable mechanism to write down a different real next to each of the enumerated naturals. Natural numbers clearly don't have this property. Between 1 and 2 there are is no natural number. Let's recap to seal the reasoning. We've given a way to write down every natural number in the first colum, by doing it in their natural order. We've given a way to pick any two different reals and then repeatedly generate new reals. With this property of the reals and the set of naturals listed, we can now easily populate column 2 with a different real for each natural. 
+
+Remember, we are leveraging the definition of set to completely collect all of the naturals, and then listing them because of their well-ordering property. Actually, we can in principle order any set this way (a well ordering, a list, a column) by assuming the Axiom of Choice. We don't need the Axiom of Choice to list the naturals since their ordering is more basic (from the Axiom of Induction or just intuition really). Our method is to list the naturals first, assigned a unique real from \\((0,1)\\) to each, and then find an extra real not on the list. Rather than use the iterated method of generating reals, choose less arbitrary ones for simplicity's sake. This doesn't change the proof.  We do this graphically with a table:
 
 |\\(\mathbb{N}\\) |\\((0,1)\\)   | 
 --- | --- |
