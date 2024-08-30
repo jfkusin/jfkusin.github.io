@@ -2,9 +2,9 @@
 layout: post
 title: Intuitive proof of Cantor's Diagonalization
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+cover-img: /assets/img/diagon.png
+thumbnail-img: /assets/img/diagonalback.png
+share-img: /assets/img/diagon.png
 mathjax: true
 tags: [math, abstract algebra, proof]
 author: Julian Kusin
