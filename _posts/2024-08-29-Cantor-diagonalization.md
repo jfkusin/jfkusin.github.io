@@ -30,7 +30,7 @@ We exhaust every natural number by stating the infinite set of natural numbers, 
 We've used all of \\(\mathbb{N}\\) in the first column. 
 
 Now we want to show there is a unique real number from \\((0,1)\\) for each natural number. If we can do that and then show there is at least one extra real number after exhausting all of the natural numbers, we will have shown the real numbers
-are countably infinite (given the Continuum Hypothesis which says there is no set with "size" (cardinality) between \\(\mathbb{N}\\) and \\(\mathbb{R}\\)). In fact we can show an infinite number of real numbers will be extras after
+are uncountably infinite (given the Continuum Hypothesis which says there is no set with "size" (cardinality) between \\(\mathbb{N}\\) and \\(\mathbb{R}\\)). In fact we can show an infinite number of real numbers will be extras after
 exhausting all of the natural numbers.
 
 To show there is at least one extra real number, first highlight digits in the main diagonal, one for every row of \\(\mathbb{N}\\), as shown:
