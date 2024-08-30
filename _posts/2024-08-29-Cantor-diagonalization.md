@@ -13,7 +13,7 @@ author: Julian Kusin
 ### This is the simplest proof in my opinion that the natural numbers are countably infinite but the real numbers are uncountably infinite:
 
 First recognize that there is a **set** of all natural numbers. The concept of a set is *critical* to this proof. This a good thing because sets are a very easy to understand concept and provide much of the 
-reasoning in the proof. The set of natural numbers, called \\(\mathbb{N}\\), simply means we can completely collect all of the natural numbers. Does that mean I write down every natural number from 1...5004...999000... and fill up 
+reasoning in the proof. It's what allows us to talk about *all* the natural numbers. Does that mean we can actually write all of them down? No. But we can describe the set of all of them. The set of natural numbers, called \\(\mathbb{N}\\), simply means we can completely collect all of the natural numbers. Does that mean I write down every natural number from 1...5004...999000... and fill up 
 endless pages? No. It means I simply recognize there is a way to conceptually talk about this complete collection and write about it using mathematical symbols in a consistent way. We call this set \(\mathbb{N}\\), the set of all natural numbers.
 
 We intuitively order \\(\mathbb{N}\\) in the usual way (1, 2, 3...) as rows in the table below (we'll ignore 0 here, it changes nothing). Next to each natural number, we're going to write a unique real number from the set of all real numbers \\(\mathbb{R}\\) between 0 and 1, written as \\((0,1)\\). We don't need all the real numbers, just this subset of them, to show all the naturals run out before "naming" all the reals. How can we intuitively 
