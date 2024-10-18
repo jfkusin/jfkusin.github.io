@@ -28,18 +28,15 @@ $$
 \begin{array}{c | c}
 \mathbb{N} &  \mathbb{R} \\
 \hline
-1 & 0.24 \\
-2 & -1  \\
-3 & -20
+1 & 0 $ . $ 3 $ 1 $ 4 $ 1 $ 5 $ 9 & 2 & 6 & ... \\
+2 & 0 $ . $ 4 $ 6 $ 6 $ 9 $ 2 $ 0 & 1 & 6 & ...  \\
+3 & 0 $ . $ 2 $ 5 $ 0 $ 2 $ 9 $ 0 & 7 & 8 & ... \\
+4 & 0 $ . $ 2 $ 7 $ 1 $ 8 $ 2 $ 8 & 1 & 8 & ... \\
+5 & 0 $ . $ 5 $ 9 $ 9 $ 0 $ 4 $ 1 & 6 & 7 & ... \\ 
 \end{array}
 $$
 
-Clearly each value in the second column is a different real. But it's not listing all of the reals as there are only reals from \\([0,1]\\) thus far. The naturals are listed however.
-
-And when I do this:
-
-
-No \\( n \in \mathbb{N}\\) maps to these reals, but they are part of the codomain. 
+Clearly each value in the second column is a different real. But it's not listing all of the reals because...
 
 
 
