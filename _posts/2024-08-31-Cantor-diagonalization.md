@@ -22,7 +22,7 @@ This means we only need to attack one function of a function-inverse function (b
 The broad idea is to "list" all of the naturals, where listing means give a finite description or explanation clearly showing how one *would enumerate them* *in order* if one had infinite time, show each one maps to a different real (showing an injection), and then showing a new real can be produced that's not on the list already, meaning  no natural maps to it (since they're all already "listed") and thus there can't be a surjection and likewise no bijection.
 
 
-Let: \\(f: \mathbb{N} \to [0,1]\\) be any injective function:
+Let: \\(f: \mathbb{N} \to [0,1] \\) be any injective function:
 
 $$
 \begin{array}{c}
