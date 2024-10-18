@@ -21,7 +21,7 @@ The broad idea is to "list" all of the naturals, where listing means give a fini
 
 I'm going to make the codomain the entire set of reals. This is slightly unconvential but makes the proof easier to see in my opinion. The barebones are still the same.
 
-Let: \\(f: \mathbb{N} \to \mathbb{R} \\)
+Let: \\(f: \mathbb{N} \to \mathbb{R} \\), then:
 
 | \\(\mathbb{N}\\) | \\(\mathbb{R}\\) |
 | --- | --- |
