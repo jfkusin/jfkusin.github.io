@@ -26,7 +26,7 @@ Let: \\(f: \mathbb{N} \to [0,1]\\) be any injective function:
 
 $$
 \begin{array}{c | c}
-\mathbb{N}\\) &  \mathbb{R} \\
+\mathbb{N} &  \mathbb{R} \\
 \hline
 1 & 0.24 \\
 2 & -1  \\
