@@ -11,7 +11,7 @@ author: Julian Kusin
 ---
 WIP
 
-Cantor proved that there are no bijective functions from the natural numbers to the real numbers, and thus they have different cardinalities. And since he proved there is an injective function but no bijective function, \\(\lvert \mathbb{R}| > \rvert \mathbb{N}\\); this is one of the definitions of cardinality. \\(\mathbb{R}\\) is thus a "larger" infinity.
+Cantor proved that there are no bijective functions from the natural numbers to the real numbers, and thus they have different cardinalities. His diagonal proof shows there's an injective function but no bijective function and thus \\(\lvert \mathbb{R}| > \rvert \mathbb{N}\\). Injection but no bijection implying a strict ineqaulity is a definition of cardinality. \\(\mathbb{R}\\) is thus a "larger" infinity.
 
 We'll break down the proof method and explain the main concepts along the way.
 
