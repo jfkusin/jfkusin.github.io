@@ -11,7 +11,7 @@ author: Julian Kusin
 ---
 WIP
 
-Cantor proved that there are no bijective functions from the natural numbers to the real numbers, and thus they have different cardinalities. Not just that, since he proved there is an injective function but no bijective function, \\(|\mathbb{R}| > |\mathbb{N}\\). \\(\mathbb{R}\\) is a "larger" infinity. 
+Cantor proved that there are no bijective functions from the natural numbers to the real numbers, and thus they have different cardinalities. And since he proved there is an injective function but no bijective function, \\(\lvert \mathbb{R}| > \rvert \mathbb{N}\\); this is one of the definitions of cardinality. \\(\mathbb{R}\\) is thus a "larger" infinity.
 
 We'll break down the proof method and explain the main concepts along the way.
 
