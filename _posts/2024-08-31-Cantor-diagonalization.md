@@ -25,7 +25,7 @@ The broad idea is to "list" all of the naturals, where listing means give a fini
 Let: \\(f: \mathbb{N} \to [0,1]\\) be any injective function:
 
 $$
-\begin{array}{c | ccccccccccc
+\begin{array}{c | ccccccccccc}
 n & \\ & \\  & \\ & \\ & \\ & \\ & f(n) & \\ & \\ & \\  & \\   
 \end{array}
 $$
