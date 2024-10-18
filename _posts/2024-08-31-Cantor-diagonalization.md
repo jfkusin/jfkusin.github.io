@@ -20,7 +20,9 @@ This means we only need to attack one function of a function-inverse function (b
 The broad idea is to "list" all of the naturals, where listing means give a finite description or explanation clearly showing how one *would enumerate them* ***in order*** if one had infinite time, show each one maps to a different real (showing an injection), and then showing a new real can be produced that's not on the list already, meaning  no natural maps to it (since they're all already "listed") and thus there can't be an inverse function over the whole set of reals to naturals, and likewise no bijection.
 
 I'm going to make the codomain the entire set of reals. This is slightly unconvential but makes the proof easier to see in my opinion. The barebones are still the same.
+
 Let: \\(f: \mathbb{N} \to \mathbb{R} \\)
+
 | \\(\mathbb{N}\\) | \\(\mathbb{R}\\) |
 | --- | --- |
 | 0 | \\(\frac{1}{2}\\) |
@@ -29,6 +31,14 @@ Let: \\(f: \mathbb{N} \to \mathbb{R} \\)
 | 3 | \\(\frac{1}{16}\\) |
 | 4 | \\(\frac{1}{32}\\) |
 | ⋮ | ⋮ |
+
+Clearly each value in the second column is a different real. But it's not listing all of the realss as there are only reals from \\([0,1]\\) thus far. The naturals are listed however.
+
+And when I do this:
+
+| ? | 3.14159.... |
+| --- | --- |
+
 
 This method by Cantor disproves the bijection from \\(\mathbb{N} \to \mathbb{R}\\) and shows the bijection fails because there are too many reals compared to the naturals. Hence the reals are a greater infinity. 
 
