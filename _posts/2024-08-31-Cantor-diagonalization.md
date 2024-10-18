@@ -38,8 +38,9 @@ Clearly each value in the second column is a different real. But it's not listin
 
 And when I do this:
 
-| ? | 3.14159.... |
+| ? | 3.14159... |
 | --- | --- |
+| ? | 4.6692...
 
 
 This method by Cantor disproves the bijection from \\(\mathbb{N} \to \mathbb{R}\\) and shows the bijection fails because there are too many reals compared to the naturals. Hence the reals are a greater infinity. 
