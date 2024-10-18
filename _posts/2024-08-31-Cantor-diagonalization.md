@@ -25,6 +25,7 @@ The broad idea is to "list" all of the naturals, where listing means give a fini
 Let: \\(f: \mathbb{N} \to [0,1]\\) be any injective function:
 
 $$
+\begin{array}{c}
 \begin{array}{ccccccccccccc}
 n & \\ & \\  & \\ & \\ & \\ & \\ & f(n) & \\ & \\ & \\  & \\ & \\   
 \end{array}
@@ -36,6 +37,7 @@ n & \\ & \\  & \\ & \\ & \\ & \\ & f(n) & \\ & \\ & \\  & \\ & \\
 3 & 0 & . & 2 & 5 & 0 & 2 & 9 & 0 & 7 & 8 & ... \\
 4 & 0 & . & 2 & 7 & 1 & 8 & 2 & 8 & 1 & 8 & ... \\
 5 & 0 & . & 5 & 9 & 9 & 0 & 4 & 1 & 6 & 7 & ...  
+\end{array}
 \end{array}
 $$
 
