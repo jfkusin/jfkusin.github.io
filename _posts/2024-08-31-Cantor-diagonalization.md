@@ -26,8 +26,8 @@ Let: \\(f: \mathbb{N} \to [0,1]\\) be any injective function:
 
 $$
 \begin{array}{c}
-\begin{array}{c|cccccccccccc}
-n & \\ & \\  & \\ & \\ & \\ & \\ & f(n) & \\ & \\ & \\  & \\ & \\   
+\begin{array}{c | ccccccccccc}
+n & \\ & \\  & \\ & \\ & \\ & \\ & f(n) & \\ & \\ & \\  & \\  
 \end{array}
 \\
 \begin{array}{c | ccccccccccc}
