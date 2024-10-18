@@ -28,6 +28,7 @@ $$
 n & f(n) 
 \end{array}
 $$
+
 $$
 \begin{array}{c | ccccccccccc}
 1 & 0 & . & 3 & 1 & 4 & 1 & 5 & 9 & 2 & 6 & ... \\
