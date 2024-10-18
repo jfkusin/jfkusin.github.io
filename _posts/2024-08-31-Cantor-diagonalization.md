@@ -27,7 +27,7 @@ Let: \\(f: \mathbb{N} \to [0,1]\\) be any injective function:
 $$
 \begin{array}{c}
 \begin{array}{c  ccccccccccc}
-n & \\  & \\  & \\  & \\  & \\  & f(n) & 5 & 9 & 2 & 6 & ... \\ 
+n & \\  & \\  & \\  & \\  & \\  & f(n) & \\  & \\  & \\  & \\  & \\  \\ 
 \end{array}
 \\
 \begin{array}{c | ccccccccccc}
