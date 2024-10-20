@@ -42,6 +42,7 @@ n & & & &  & & f(n) &  &  & &  &  &  &   &  &
 $$
 
 While the first column is all of the naturals, the second column is not all of the reals. Why? Because any attempt to list them shows a real will be missed. (That is not true for listing the naturals; we know every one will be listed, clearly). To create a real not on "the list", simply add \\(1\\) to 
+the first digit past the decimal for row one, the second digit of row two, and so on (letting \\(9+1)\\) wrap around to \\(0\\):
 
 $$
 \begin{array}{c}
@@ -52,16 +53,16 @@ n & & & &  & & f(n) &  &  & &  &  &  &   &  &
 \begin{array}{c | ccccccccccc}
 \hline
 1 & 0 & . & \textbf{3} & 1 & 4 & 1 & 5 & 9 & 2 & 6 & ... \\
-2 & 0 & . & 4 & 6 & 6 & 9 & 2 & 0 & 1 & 6 & ...  \\
-3 & 0 & . & 2 & 5 & 0 & 2 & 9 & 0 & 7 & 8 & ... \\
-4 & 0 & . & 2 & 7 & 1 & 8 & 2 & 8 & 1 & 8 & ... \\
-5 & 0 & . & 5 & 9 & 9 & 0 & 4 & 1 & 6 & 7 & ... \\ 
+2 & 0 & . & 4 & \textbf{6} & 6 & 9 & 2 & 0 & 1 & 6 & ...  \\
+3 & 0 & . & 2 & 5 & \textbf{0} & 2 & 9 & 0 & 7 & 8 & ... \\
+4 & 0 & . & 2 & 7 & 1 & \textbf{8} & 2 & 8 & 1 & 8 & ... \\
+5 & 0 & . & 5 & 9 & 9 & 0 & \textbf{4} & 1 & 6 & 7 & ... \\ 
 ⋮ & ⋮
 \end{array}
 \end{array}
 $$
 
-This method by Cantor disproves the bijection from \\(\mathbb{N} \to \mathbb{R}\\) and shows the bijection fails because there are too many reals compared to the naturals. Hence the reals are a greater infinity. 
+Doing so, for any codomain for this injective function, with any attempt to list it, will always produce a new real not previously on the thus. That's because it will differ from each number already "on the list" by one digit. Therefore, while a injection exists, no surjection will ever exist. Keep in mind, no surjectiion exists when *letting \\(f\\) be an injective function from the naturals*. Letting \\(f\\) be such a function is precisely the assumption we want to make. We have to have an injection to even attempt a bijection. And that we have one or many, and then no injections, proves by definition \\(|\mathbb{N}| < |\mathbb{R}|\\). Hence the reals are a greater infinity. 
 
 
 
