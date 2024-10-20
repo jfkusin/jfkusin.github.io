@@ -62,7 +62,8 @@ n & & & &  & & f(n) &  &  & &  &  &  &   &  &
 \end{array}
 $$
 
-Doing so, for any codomain for this injective function, with any attempt to list it, will always produce a new real not previously on the thus. That's because it will differ from each number already "on the list" by one digit. Therefore, while a injection exists, no surjection will ever exist. Keep in mind, no surjectiion exists when *letting \\(f\\) be an injective function from the naturals*. Letting \\(f\\) be such a function is precisely the assumption we want to make. We have to have an injection to even attempt a bijection. And that we have one or many, and then no injections, proves by definition \\(|\mathbb{N}| < |\mathbb{R}|\\). Hence the reals are a greater infinity. 
+Doing so, for any codomain for this injective function, with any attempt to list it, will always produce a new real not previously on the thus. That's because it will differ from each number already "on the list" by one digit. Therefore, while a injection exists, no surjection will ever exist. Keep in mind, no surjectiion exists when *letting \\(f\\) be an injective function from the naturals*. Letting \\(f\\) be such a function is precisely the assumption we want to make. We have to have an injection to even attempt a bijection. And that we have one or many, and then no injections, proves by definition 
+\\(|\mathbb{N}| < |\mathbb{R}|\\). Hence the reals are a greater infinity. 
 
 
 
