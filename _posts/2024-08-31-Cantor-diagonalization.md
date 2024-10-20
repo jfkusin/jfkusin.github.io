@@ -10,7 +10,8 @@ tags: [math, sets, proof]
 author: Julian Kusin
 
 ---
-Cantor proved that there are no bijective functions from the natural numbers to the real numbers, and thus they have different cardinalities. His diagonal proof shows there's an injective function from \\(\mathbb{N} \to \mathbb{R}\\) but no bijective function can exist, and thus \\(|\mathbb{N}| < |\mathbb{R}|\\). Injection but no bijection implying a strict inequality is a definition of cardinality. \\(\mathbb{R}\\) is thus a "larger" infinity.
+Cantor proved that there are no bijective functions from the natural numbers to the real numbers, and thus they have different cardinalities. His diagonal proof shows there's an injective function from \\(\mathbb{N} \to \mathbb{R}\\) but no bijective function can exist, and thus  
+\\(|\mathbb{N}| < |\mathbb{R}|\\). Injection but no bijection implying a strict inequality is a definition of cardinality. \\(\mathbb{R}\\) is thus a "larger" infinity.
 
 <!---
 There's a bijection, and thus equal cardinality, between \\(\mathbb{N}\\) and \\(\mathbb{R}\\) if and only if (\\(\iff\\)) there is at least one bijective function from \\(\mathbb{N} \to \mathbb{R}\\). 
