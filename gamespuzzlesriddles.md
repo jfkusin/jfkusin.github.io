@@ -4,7 +4,12 @@ title: Games, Puzzles, Riddles, and Interactives
 subtitle: 
 ---
 
-## My name is Julian Kusin
+## Games & Puzzles
+- [Nikoli's puzzles](https://www.nikoli.co.jp/en/puzzles/)
+
+## Riddles
+
+## Interactives/Other
 
 - I live in the Bay Area
 - I have many interests
