@@ -14,4 +14,4 @@ subtitle: A curation
 
 ## Tools
 
--[Geogebra Phase Portrait](https://www.geogebra.org/m/fYxXgbsU)
+- [Geogebra Phase Portrait](https://www.geogebra.org/m/fYxXgbsU)
