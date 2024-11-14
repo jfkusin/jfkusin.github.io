@@ -10,6 +10,7 @@ subtitle: Play and engage
 - [Krazydad's puzzles](https://krazydad.com/)
 - [Thomas' compiliation of puzzles](https://people.cs.umass.edu/~pthomas/LogicPuzzles.html)
 - [Number hive puzzles](https://teachinglondoncomputing.org/cut-hive-puzzles/)
+- [Futoshiki](https://www.futoshiki.com/)
 
 ## Riddles
 - [Coldwell's Compilation of Riddles](https://puzzles.nigelcoldwell.co.uk/)
