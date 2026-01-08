@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Computation and Cryptology
+title: Becoming a Teacher
 subtitle: A curation
 ---
 
