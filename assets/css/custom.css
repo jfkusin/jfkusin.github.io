@@ -1,0 +1,25 @@
+.gradient-btn {
+  /* Layout and Spacing */
+  display: inline-block;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #333; /* Text color */
+  font-weight: bold;
+
+  /* The Rounded Square Shape */
+  border-radius: 12px; 
+
+  /* Creating the Gradient Border */
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(to right, #007bff, #6f42c1, #fd7e14);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  
+  /* Smooth transition for a hover effect */
+  transition: transform 0.2s ease;
+}
+
+.gradient-btn:hover {
+  transform: translateY(-2px);
+}
