@@ -1,25 +1,22 @@
 .gradient-btn {
-  /* Layout and Spacing */
   display: inline-block;
   padding: 10px 25px;
-  text-decoration: none;
-  color: #333; /* Text color */
+  text-decoration: none !important; /* Ensures link underline is gone */
+  color: #333 !important; 
   font-weight: bold;
-
-  /* The Rounded Square Shape */
   border-radius: 12px; 
-
-  /* Creating the Gradient Border */
+  
+  /* Gradient Border Logic */
   border: 2px solid transparent;
   background-image: linear-gradient(white, white), 
                     linear-gradient(to right, #007bff, #6f42c1, #fd7e14);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   
-  /* Smooth transition for a hover effect */
   transition: transform 0.2s ease;
 }
 
 .gradient-btn:hover {
-  transform: translateY(-2px);
+  transform: scale(1.05);
+  color: #000 !important;
 }
