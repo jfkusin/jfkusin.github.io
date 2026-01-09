@@ -1,22 +1,55 @@
+/* The Grid Container */
+#link-grid {
+  display: grid;
+  /* Creates 4 columns of equal width */
+  grid-template-columns: repeat(4, 1fr); 
+  /* Spacing between the buttons */
+  gap: 20px; 
+  /* Spacing around the outside of the whole grid */
+  padding: 40px 10px; 
+}
+
+/* The Buttons */
 .gradient-btn {
-  display: inline-block;
-  padding: 10px 25px;
-  text-decoration: none !important; /* Ensures link underline is gone */
-  color: #333 !important; 
-  font-weight: bold;
-  border-radius: 12px; 
+  display: flex;
+  align-items: center;  /* Centers text vertically */
+  justify-content: center; /* Centers text horizontally */
+  text-align: center;
+  min-height: 80px;     /* Ensures they look like squares/rectangles */
+  padding: 15px;
+  text-decoration: none !important;
+  color: #444 !important;
+  font-weight: 600;
+  border-radius: 12px;
   
-  /* Gradient Border Logic */
+  /* The Gradient Border */
   border: 2px solid transparent;
-  background-image: linear-gradient(white, white), 
+  background-image: linear-gradient(#fff, #fff), 
                     linear-gradient(to right, #007bff, #6f42c1, #fd7e14);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   
-  transition: transform 0.2s ease;
+  /* Smooth animation for hover */
+  transition: all 0.3s ease;
 }
 
+/* Hover Effect */
 .gradient-btn:hover {
-  transform: scale(1.05);
-  color: #000 !important;
+  transform: translateY(-3px); /* Lifts button up slightly */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Adds a soft shadow */
+  background-image: linear-gradient(#f8f9fa, #f8f9fa), 
+                    linear-gradient(to right, #007bff, #6f42c1, #fd7e14);
+}
+
+/* Mobile Friendly: Stack them on small screens */
+@media (max-width: 768px) {
+  #link-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2x8 on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  #link-grid {
+    grid-template-columns: 1fr; /* 1 column on phones */
+  }
 }
