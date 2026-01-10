@@ -1,73 +1,46 @@
 #link-grid {
   display: grid;
-  /* Column 1 is 50px for labels, then 4 equal columns for buttons */
-  grid-template-columns: 50px repeat(4, 1fr); 
+  /* 50px for labels, then 4 strictly equal columns */
+  grid-template-columns: 50px repeat(4, minmax(0, 1fr)); 
   gap: 20px;
   
-  /* MOVES GRID UP: Adjust -30px to pull it even higher if needed */
   margin: -30px auto 0 auto; 
   padding: 0 20px 60px 20px;
   
-  max-width: 950px;
+  /* Increased max-width slightly to allow squares to grow */
+  max-width: 1000px; 
   align-items: center;
 
-  /* BALANCING FIX: Pushes grid left so buttons are centered on page */
+  /* Centers the 4 buttons on the page by offsetting the 50px label col */
   transform: translateX(-25px); 
+  box-sizing: border-box;
 }
 
-/* Coordinate Labels Base */
-.grid-label {
-  font-weight: bold;
-  color: #E33E33;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  text-align: center;
-  
-  /* Fade out logic */
-  opacity: 0; 
-  transition: opacity 0.3s ease;
-}
-
-/* Fade in on hover */
-#link-grid:hover .grid-label {
-  opacity: 1;
-}
-
-/* Ensure row labels are right-aligned to sit close to the buttons */
-.row-label {
-  justify-self: end;
-  padding-right: 10px;
-}
-
-/* Column labels sit centered in their grid cell */
-.col-label {
-  padding-bottom: 10px;
-}
-
-/* The Button Squares */
 .gradient-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 15px;
-  aspect-ratio: 1 / 1;
-  text-decoration: none !important;
-  color: #333 !important;
-  font-weight: 700;
+  
+  /* Force it to fill the grid cell perfectly */
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  
+  /* Text handling to prevent stretching the square */
+  overflow: hidden;
+  word-wrap: break-word;
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
-  border-radius: 12px;
+  font-weight: 700;
+  
+  /* Your Sunset Border */
   border: 2px solid transparent;
   background-image: linear-gradient(#fff, #fff), 
                     linear-gradient(to right, #E33E33, #FF8C00, #FFD700);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  
   transition: all 0.3s ease;
-}
-
-.gradient-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(255, 140, 0, 0.2);
 }
 
 /* Mobile Rule */
