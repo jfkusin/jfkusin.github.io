@@ -43,19 +43,19 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 15px;
-  font-size: clamp(0.7rem, 2vw, 1rem); /* Shrinks text slightly on smaller screens */
-  overflow: hidden;
-  word-wrap: break-word;
+  padding: 20px; /* Increased padding to keep text away from the edges */
   text-decoration: none !important;
-  color: #444 !important;
-  font-weight: 600;
-  border-radius: 12px;
-
-  /* This makes the height always match the width */
-  aspect-ratio: 1 / 1; 
+  color: #333 !important; /* Slightly darker for better readability */
   
-  /* Gradient Border */
+  /* --- FONT SETTINGS --- */
+  /* This says: Start at 1.4rem, but grow up to 2.5% of the screen width */
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem); 
+  font-weight: 700; /* Bold makes the text feel more substantial */
+  line-height: 1.2; /* Keeps multi-line titles tight */
+  /* --------------------- */
+
+  aspect-ratio: 1 / 1; 
+  border-radius: 12px;
   border: 2px solid transparent;
   background-image: linear-gradient(#fff, #fff), 
                     linear-gradient(to right, #E33E33, #FF8C00, #FFD700);
