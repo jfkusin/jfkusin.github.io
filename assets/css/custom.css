@@ -7,7 +7,6 @@
   margin: -30px auto 0 auto; 
   padding: 0 20px 60px 20px;
   
-  /* Increased max-width slightly to allow squares to grow */
   max-width: 1000px; 
   align-items: center;
 
@@ -16,6 +15,37 @@
   box-sizing: border-box;
 }
 
+/* --- Coordinate Label Logic --- */
+.grid-label {
+  font-weight: bold;
+  color: #E33E33; /* Warm red to match your border */
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  
+  /* Start hidden */
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  pointer-events: none; 
+}
+
+/* Reveal labels when hovering anywhere on the grid */
+#link-grid:hover .grid-label {
+  opacity: 1;
+}
+
+/* Center number headers over the buttons */
+.col-label {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* Right-align letter headers next to the buttons */
+.row-label {
+  text-align: right;
+  padding-right: 15px;
+}
+
+/* --- The Buttons --- */
 .gradient-btn {
   display: flex;
   align-items: center;
@@ -23,17 +53,20 @@
   text-align: center;
   padding: 15px;
   
-  /* Force it to fill the grid cell perfectly */
   width: 100%;
   aspect-ratio: 1 / 1; 
   
-  /* Text handling to prevent stretching the square */
+  /* ROUNDED CORNERS: Restored */
+  border-radius: 12px; 
+  
   overflow: hidden;
   word-wrap: break-word;
-  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  font-size: clamp(0.85rem, 1.5vw, 1.1rem);
   font-weight: 700;
+  color: #333 !important;
+  text-decoration: none !important;
   
-  /* Your Sunset Border */
+  /* Sunset Border */
   border: 2px solid transparent;
   background-image: linear-gradient(#fff, #fff), 
                     linear-gradient(to right, #E33E33, #FF8C00, #FFD700);
@@ -43,17 +76,7 @@
   transition: all 0.3s ease;
 }
 
-/* Mobile Rule */
-@media (max-width: 992px) {
-  #link-grid {
-    grid-template-columns: 40px repeat(2, 1fr); /* Label + 2 columns */
-    padding: 20px 10px;
-  }
-  .grid-label { opacity: 1 !important; }
-  .row-label { 
-    position: static; /* Bring back into grid flow */
-    text-align: center;
-  }
-  /* Hide column labels on mobile to save vertical space if desired */
-  .col-label { display: none; } 
+.gradient-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 140, 0, 0.15);
 }
