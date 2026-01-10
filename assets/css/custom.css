@@ -19,11 +19,11 @@
   font-weight: 600;
   border-radius: 12px;
   
-  /* The Red/Orange Gradient Border */
+  /* The Sunset Gradient Border */
   border: 2px solid transparent;
-  /* Hex codes: #ff416c (Red) to #ff4b2b (Orange) */
+  /* Hex codes: #E33E33 (Warm Red) -> #FF8C00 (Dark Orange) -> #FFD700 (Gold/Yellow) */
   background-image: linear-gradient(#fff, #fff), 
-                    linear-gradient(to right, #ff416c, #ff4b2b, #ff8c00);
+                    linear-gradient(to right, #E33E33, #FF8C00, #FFD700);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   
@@ -33,12 +33,16 @@
 /* Hover Effect */
 .gradient-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(255, 75, 43, 0.2); /* Slight orange glow */
-  /* Keep the gradient on hover or make it slightly brighter */
+  /* Uses a soft orange shadow instead of red */
+  box-shadow: 0 10px 20px rgba(255, 140, 0, 0.2); 
   background-image: linear-gradient(#fdfdfd, #fdfdfd), 
-                    linear-gradient(to right, #ff416c, #ff4b2b, #ff8c00);
+                    linear-gradient(to right, #E33E33, #FF8C00, #FFD700);
 }
 
-/* Responsive fixes for mobile */
-@media (max-width: 992px) { #link-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 480px) { #link-grid { grid-template-columns: 1fr; } }
+/* Responsive: 4x4 on desktop, 2x8 on tablet, 1x16 on mobile */
+@media (max-width: 992px) { 
+  #link-grid { grid-template-columns: repeat(2, 1fr); } 
+}
+@media (max-width: 480px) { 
+  #link-grid { grid-template-columns: 1fr; } 
+}
