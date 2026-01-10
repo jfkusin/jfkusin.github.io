@@ -1,48 +1,56 @@
-/* The Grid Container */
 #link-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 20px; 
-  padding: 40px 10px; 
+  /* 5 columns: 1st is small for labels, other 4 are equal */
+  grid-template-columns: 80px repeat(4, 1fr); 
+  gap: 15px;
+  padding: 40px 10px;
+  align-items: center;
 }
 
-/* The Buttons */
+/* Base style for labels */
+.grid-label {
+  font-weight: bold;
+  color: #E33E33; /* Matching your warm red */
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-align: center;
+  
+  /* Start hidden and slightly shifted */
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+/* When the grid is hovered, show all labels */
+#link-grid:hover .grid-label {
+  opacity: 1;
+}
+
+.row-label { transform: translateX(10px); }
+#link-grid:hover .row-label { transform: translateX(0); }
+
+.col-label { transform: translateY(10px); }
+#link-grid:hover .col-label { transform: translateY(0); }
+
+/* Keep your button styles the same */
 .gradient-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   min-height: 80px;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none !important;
   color: #444 !important;
   font-weight: 600;
   border-radius: 12px;
-  
-  /* The Sunset Gradient Border */
   border: 2px solid transparent;
-  /* Hex codes: #E33E33 (Warm Red) -> #FF8C00 (Dark Orange) -> #FFD700 (Gold/Yellow) */
   background-image: linear-gradient(#fff, #fff), 
                     linear-gradient(to right, #E33E33, #FF8C00, #FFD700);
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-/* Hover Effect */
 .gradient-btn:hover {
-  transform: translateY(-3px);
-  /* Uses a soft orange shadow instead of red */
-  box-shadow: 0 10px 20px rgba(255, 140, 0, 0.2); 
-  background-image: linear-gradient(#fdfdfd, #fdfdfd), 
-                    linear-gradient(to right, #E33E33, #FF8C00, #FFD700);
-}
-
-/* Responsive: 4x4 on desktop, 2x8 on tablet, 1x16 on mobile */
-@media (max-width: 992px) { 
-  #link-grid { grid-template-columns: repeat(2, 1fr); } 
-}
-@media (max-width: 480px) { 
-  #link-grid { grid-template-columns: 1fr; } 
+  transform: scale(1.03);
 }
