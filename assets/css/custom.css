@@ -1,116 +1,80 @@
 #link-grid {
   display: grid;
-  /* Exactly 4 equal columns */
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr); /* 4 perfect equal columns */
   gap: 20px;
-  padding: 40px 10px;
+  padding: 60px 20px;
   max-width: 900px;
   margin: 0 auto;
-  position: relative; /* This allows us to position labels relative to the grid */
+  position: relative; /* Essential for positioning the row labels */
+  align-items: center;
 }
 
-/* Position Row Labels to the left of the grid */
-.row-label {
-  position: absolute;
-  left: -70px; /* Adjust this if you want labels closer or further away */
-  width: 60px;
-  text-align: right;
-  /* This centers the label vertically with the row */
-  align-self: center; 
-}
-
-/* Position Column Labels above the grid */
-.col-label {
-  /* No special absolute positioning needed, we'll use grid-column placement */
-  grid-row: 1; 
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-/* Base style for labels */
+/* Base Label Styling */
 .grid-label {
   font-weight: bold;
-  color: #E33E33; /* Matching your warm red */
+  color: #E33E33;
   text-transform: uppercase;
-  font-size: 0.8rem;
-  text-align: center;
-  
-  /* Start hidden and slightly shifted */
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
+  font-size: 0.9rem;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
 }
 
-/* When the grid is hovered, show all labels */
+/* Show labels when grid is hovered */
 #link-grid:hover .grid-label {
   opacity: 1;
 }
 
-.row-label { transform: translateX(10px); }
-#link-grid:hover .row-label { transform: translateX(0); }
+/* Row Labels: Positioned absolutely to the left of the grid flow */
+.row-label {
+  position: absolute;
+  left: -50px; /* Moves label outside the grid to the left */
+  width: 40px;
+  text-align: right;
+}
 
-.col-label { transform: translateY(10px); }
-#link-grid:hover .col-label { transform: translateY(0); }
+/* Column Labels: Sit in the first row of the grid */
+.col-label {
+  padding-bottom: 10px;
+  text-align: center;
+}
 
-/* Keep your button styles the same */
+/* The Button Squares */
 .gradient-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px; /* Increased padding to keep text away from the edges */
+  padding: 15px;
+  aspect-ratio: 1 / 1;
   text-decoration: none !important;
-  color: #333 !important; /* Slightly darker for better readability */
-  
-  /* --- FONT SETTINGS --- */
-  /* This says: Start at 1.4rem, but grow up to 2.5% of the screen width */
-  font-size: clamp(1.1rem, 1.8vw, 1.4rem); 
-  font-weight: 700; /* Bold makes the text feel more substantial */
-  line-height: 1.2; /* Keeps multi-line titles tight */
-  /* --------------------- */
-
-  aspect-ratio: 1 / 1; 
+  color: #333 !important;
+  font-weight: 700;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   border-radius: 12px;
   border: 2px solid transparent;
   background-image: linear-gradient(#fff, #fff), 
                     linear-gradient(to right, #E33E33, #FF8C00, #FFD700);
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  
   transition: all 0.3s ease;
 }
 
 .gradient-btn:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 140, 0, 0.2);
 }
 
-/* --- MOBILE RULES AT THE BOTTOM --- */
-
-/* Tablet & Smaller (992px) */
+/* Mobile Rule */
 @media (max-width: 992px) {
-  .grid-label {
-    opacity: 1 !important;
-    transform: none !important;
-  }
-
   #link-grid {
-    /* Reset the right padding so 2 columns center properly */
-    padding-right: 10px; 
-    grid-template-columns: 50px repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: 40px repeat(2, 1fr); /* Label + 2 columns */
+    padding: 20px 10px;
   }
-
-  .gradient-btn {
-    /* We don't need min-height anymore since we have aspect-ratio, 
-       but we can shrink the font slightly for small squares */
-    font-size: 0.9rem;
+  .grid-label { opacity: 1 !important; }
+  .row-label { 
+    position: static; /* Bring back into grid flow */
+    text-align: center;
   }
-}
-
-/* Phones (480px) */
-@media (max-width: 480px) {
-  #link-grid {
-    /* 1 label column, 1 button column */
-    grid-template-columns: 40px 1fr;
-    padding-right: 10px;
-  }
+  /* Hide column labels on mobile to save vertical space if desired */
+  .col-label { display: none; } 
 }
