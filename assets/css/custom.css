@@ -71,32 +71,34 @@
   transform: scale(1.03);
 }
 
-/* Mobile Rule: Always show labels on screens smaller than 992px */
+/* --- MOBILE RULES AT THE BOTTOM --- */
+
+/* Tablet & Smaller (992px) */
 @media (max-width: 992px) {
-  /* Force labels to be visible */
   .grid-label {
     opacity: 1 !important;
     transform: none !important;
   }
 
-  /* Adjust grid for smaller screens: 3 columns (1 for label, 2 for buttons) */
   #link-grid {
-    grid-template-columns: 60px repeat(2, 1fr);
+    /* Reset the right padding so 2 columns center properly */
+    padding-right: 10px; 
+    grid-template-columns: 50px repeat(2, 1fr);
     gap: 10px;
   }
 
-  /* Make buttons a bit shorter to save vertical space on mobile */
   .gradient-btn {
-    min-height: 60px;
+    /* We don't need min-height anymore since we have aspect-ratio, 
+       but we can shrink the font slightly for small squares */
     font-size: 0.9rem;
   }
 }
 
-/* Extra small screens (Phones) */
+/* Phones (480px) */
 @media (max-width: 480px) {
-  /* Optional: Hide labels on very tiny phones if it gets too cramped, 
-     or keep them and go to a single column of buttons */
   #link-grid {
-    grid-template-columns: 50px 1fr;
+    /* 1 label column, 1 button column */
+    grid-template-columns: 40px 1fr;
+    padding-right: 10px;
   }
 }
