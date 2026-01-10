@@ -1,22 +1,32 @@
 #link-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 perfect equal columns */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  padding: 60px 20px;
+  
+  /* MOVED UP: Reduced top padding from 60px to 10px */
+  padding: 10px 20px 60px 20px; 
+  
   max-width: 900px;
   margin: 0 auto;
-  position: relative; /* Essential for positioning the row labels */
-  align-items: center;
+  position: relative;
+  
+  /* This ensures row labels align with the vertical center of the squares */
+  align-items: center; 
 }
 
-/* Base Label Styling */
-.grid-label {
-  font-weight: bold;
-  color: #E33E33;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.3s ease;
+/* Row Labels Fix */
+.row-label {
+  position: absolute;
+  left: -50px;
+  width: 40px;
+  text-align: right;
+  
+  /* This forces the label to stay within its grid-row assigned in HTML */
+  grid-column: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%; /* Spans the full height of the row to stay centered */
 }
 
 /* Show labels when grid is hovered */
