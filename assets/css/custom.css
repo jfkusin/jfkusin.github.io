@@ -1,16 +1,18 @@
 #link-grid {
   display: grid;
-  /* 1st column for labels, then 4 equal columns for buttons */
+  /* 1st column is 60px, others are equal */
   grid-template-columns: 60px repeat(4, 1fr); 
+  gap: 20px;
+  padding: 40px 10px;
+  align-items: center;
+
+  /* --- THE FIX --- */
+  max-width: 1000px;  /* Or whatever width fits your site best */
+  margin: 0 auto;     /* Centers the container itself */
   
-  /* Space between buttons */
-  gap: 20px; 
-  
-  /* Space outside the grid */
-  padding: 40px 10px; 
-  
-  /* Vertically centers labels with the square buttons */
-  align-items: center; 
+  /* Add 60px padding to the right to balance the 60px label column on the left */
+  padding-right: 60px; 
+  /* ---------------- */
 }
 
 /* Base style for labels */
