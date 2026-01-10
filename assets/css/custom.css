@@ -1,18 +1,30 @@
 #link-grid {
   display: grid;
-  /* 1st column is 60px, others are equal */
-  grid-template-columns: 60px repeat(4, 1fr); 
+  /* Exactly 4 equal columns */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
   padding: 40px 10px;
-  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative; /* This allows us to position labels relative to the grid */
+}
 
-  /* --- THE FIX --- */
-  max-width: 1000px;  /* Or whatever width fits your site best */
-  margin: 0 auto;     /* Centers the container itself */
-  
-  /* Add 60px padding to the right to balance the 60px label column on the left */
-  padding-right: 60px; 
-  /* ---------------- */
+/* Position Row Labels to the left of the grid */
+.row-label {
+  position: absolute;
+  left: -70px; /* Adjust this if you want labels closer or further away */
+  width: 60px;
+  text-align: right;
+  /* This centers the label vertically with the row */
+  align-self: center; 
+}
+
+/* Position Column Labels above the grid */
+.col-label {
+  /* No special absolute positioning needed, we'll use grid-column placement */
+  grid-row: 1; 
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 /* Base style for labels */
