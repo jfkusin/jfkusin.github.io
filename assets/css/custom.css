@@ -1,46 +1,49 @@
 #link-grid {
   display: grid;
-  /* 30px label column + 4 equal button columns */
-  grid-template-columns: 30px repeat(4, minmax(0, 1fr)); 
+  /* Shrunk the label column to 20px for maximum proximity */
+  grid-template-columns: 20px repeat(4, minmax(0, 1fr)); 
   gap: 20px;
   margin: -30px auto 0 auto; 
   padding: 0 20px 60px 20px;
   max-width: 1000px; 
   align-items: center;
-  /* Centers the 4 buttons by offsetting the 30px label column */
-  transform: translateX(-15px); 
+  
+  /* Offsets the new 20px gutter to keep buttons centered */
+  transform: translateX(-10px); 
   box-sizing: border-box;
 }
 
-/* --- Coordinate Labels (The Fix) --- */
+/* --- Coordinate Labels --- */
 .grid-label {
   font-family: inherit;
-  color: #000; /* Black text */
+  color: #000;
   font-size: 0.75rem; 
   font-weight: bold;
   
-  /* HIDDEN BY DEFAULT */
+  /* Hover Functionality Restored */
   opacity: 0; 
   transition: opacity 0.3s ease;
   pointer-events: none; 
 }
 
-/* APPEAR ON HOVER */
+/* Reveal labels on hover */
 #link-grid:hover .grid-label {
   opacity: 1;
 }
 
 .col-label {
   text-align: center;
-  padding-bottom: 2px; /* Closer to the square */
+  /* Reduced to 0 to sit right on top of the button */
+  padding-bottom: 0px; 
 }
 
 .row-label {
   text-align: right;
-  padding-right: 5px; /* Closer to the square */
+  /* Reduced to 2px to sit right next to the button */
+  padding-right: 2px; 
 }
 
-/* --- The Buttons --- */
+/* --- The Buttons (Solid Border) --- */
 .gradient-btn {
   display: flex;
   align-items: center;
@@ -50,7 +53,12 @@
   width: 100%;
   aspect-ratio: 1 / 1; 
   border-radius: 12px; 
-  border: 4px solid transparent; 
+  
+  /* SOLID BORDER ONLY */
+  border: 4px solid #ff5a5a; 
+  background-color: #fff;
+  
+  /* Font settings */
   font-family: inherit; 
   font-size: clamp(1rem, 1.8vw, 1.3rem); 
   font-weight: 700;
@@ -59,17 +67,11 @@
   line-height: 1.2;
   overflow: hidden;
   word-wrap: break-word;
-
-  /* The 95% Red / 5% Silver Gradient */
-  background-image: linear-gradient(#fff, #fff), 
-                    linear-gradient(135deg, #ff5a5a 92%, #C0C0C0 100%);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
   
   transition: all 0.3s ease;
 }
 
 .gradient-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(255, 90, 90, 0.15);
 }
