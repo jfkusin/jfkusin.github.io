@@ -55,12 +55,12 @@
   border-radius: 12px; 
   
   /* SOLID BORDER ONLY */
-  border: 4px solid #ff5a5a; 
+  border: 3.5px solid #ff5a5a; 
   background-color: #fff;
   
   /* Font settings */
   font-family: inherit; 
-  font-size: clamp(1rem, 1.8vw, 1.3rem); 
+  font-size: clamp(1rem, 1.77vw, 1.27rem); 
   font-weight: 700;
   color: #333 !important;
   text-decoration: none !important;
