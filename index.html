@@ -62,39 +62,6 @@ p {text-align: center;}
   <a href="/mystery" class="gradient-btn">Mystery</a>
 </div>
   
-<div id="cayley-result">
-  <span id="op-text">Select coordinates...</span>
-</div>
-
-<div class="group-info">
-  <p><em>Easter Egg:</em> This grid is arranged as a <strong>Klein Four-group</strong> Cayley Table. In this group, every element is its own inverse ($a^2 = e$).</p>
-</div>
-
-document.querySelectorAll('.gradient-btn').forEach(btn => {
-  btn.addEventListener('mouseenter', function() {
-    // Get coordinates from the grid-row and grid-column (or order in HTML)
-    // For this to work easily, we can just use the index of the button
-    const buttons = Array.from(document.querySelectorAll('.gradient-btn'));
-    const index = buttons.indexOf(this);
-    
-    const row = Math.floor(index / 4) + 1;
-    const col = (index % 4) + 1;
-    
-    // Klein Four-group V4 Logic
-    let res;
-    if (row === 1) res = col;
-    else if (col === 1) res = row;
-    else if (row === col) res = 1;
-    else {
-      // The "other" element logic: 
-      // If we have 2 and 3, result is 4. If 2 and 4, result is 3, etc.
-      res = [2, 3, 4].find(n => n !== row && n !== col);
-    }
-
-    document.getElementById('op-text').innerText = `${row} ∗ ${col} = ${res}`;
-  });
-});
-  
 </body>
 </html>
 
