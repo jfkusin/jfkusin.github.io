@@ -11,16 +11,20 @@
 }
 
 /* --- Coordinate Labels --- */
-.col-label {
-  text-align: center;
-  /* REDUCED: from 10px to 2px to bring numbers closer to the top of squares */
-  padding-bottom: 2px; 
-}
-
-.row-label {
-  text-align: right;
-  /* REDUCED: from 15px to 5px to bring numbers closer to the left of squares */
-  padding-right: 5px; 
+.grid-label {
+  /* CHANGED: Inherit font to match the rest of the site */
+  font-family: inherit; 
+  
+  /* CHANGED: Black text */
+  color: #000; 
+  
+  /* CHANGED: Smaller font size for coordinates */
+  font-size: 0.75rem; 
+  
+  font-weight: bold;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  pointer-events: none; 
 }
 
 /* --- The Grid Layout --- */
