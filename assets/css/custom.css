@@ -77,3 +77,29 @@
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(255, 90, 90, 0.15);
 }
+
+#cayley-result {
+  text-align: center;
+  margin-top: -30px; /* Pulls it closer to the grid */
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ff5a5a;
+  height: 30px; /* Prevents layout jumping */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#link-grid:hover + #cayley-result {
+  opacity: 1;
+}
+
+.group-info {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+  border-top: 1px inset #eee;
+  padding-top: 10px;
+}
