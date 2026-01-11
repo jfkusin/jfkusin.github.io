@@ -20,15 +20,18 @@
   font-size: 0.75rem; 
   font-weight: bold;
   
-  /* Hover Logic */
+  /* Initial State */
   opacity: 0; 
-  transition: opacity 0.3s ease;
+  /* The fade takes 0.3s, but we wait 20s to start it */
+  transition: opacity 0.3s ease 0s; 
   pointer-events: none; 
 }
 
-/* Reveal on hover */
+/* Reveal on hover after a massive delay */
 #link-grid:hover .grid-label {
   opacity: 1;
+  /* 20 second delay only applied when entering the hover state */
+  transition-delay: 20s;
 }
 
 .col-label {
