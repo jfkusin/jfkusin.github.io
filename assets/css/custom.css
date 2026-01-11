@@ -1,47 +1,43 @@
 #link-grid {
   display: grid;
-  grid-template-columns: 50px repeat(4, minmax(0, 1fr)); 
+  /* 30px label column + 4 equal button columns */
+  grid-template-columns: 30px repeat(4, minmax(0, 1fr)); 
   gap: 20px;
   margin: -30px auto 0 auto; 
   padding: 0 20px 60px 20px;
   max-width: 1000px; 
   align-items: center;
-  transform: translateX(-25px); 
+  /* Centers the 4 buttons by offsetting the 30px label column */
+  transform: translateX(-15px); 
   box-sizing: border-box;
 }
 
-/* --- Coordinate Labels --- */
+/* --- Coordinate Labels (The Fix) --- */
 .grid-label {
-  /* CHANGED: Inherit font to match the rest of the site */
-  font-family: inherit; 
-  
-  /* CHANGED: Black text */
-  color: #000; 
-  
-  /* CHANGED: Smaller font size for coordinates */
+  font-family: inherit;
+  color: #000; /* Black text */
   font-size: 0.75rem; 
-  
   font-weight: bold;
+  
+  /* HIDDEN BY DEFAULT */
   opacity: 0; 
   transition: opacity 0.3s ease;
   pointer-events: none; 
 }
 
-/* --- The Grid Layout --- */
-#link-grid {
-  display: grid;
-  /* REDUCED: column width from 50px to 30px to pull labels inward */
-  grid-template-columns: 30px repeat(4, minmax(0, 1fr)); 
-  gap: 20px;
-  
-  margin: -30px auto 0 auto; 
-  padding: 0 20px 60px 20px;
-  max-width: 1000px; 
-  align-items: center;
+/* APPEAR ON HOVER */
+#link-grid:hover .grid-label {
+  opacity: 1;
+}
 
-  /* ADJUSTED: Half of the 30px column width (15px) to keep it centered */
-  transform: translateX(-15px); 
-  box-sizing: border-box;
+.col-label {
+  text-align: center;
+  padding-bottom: 2px; /* Closer to the square */
+}
+
+.row-label {
+  text-align: right;
+  padding-right: 5px; /* Closer to the square */
 }
 
 /* --- The Buttons --- */
@@ -53,28 +49,27 @@
   padding: 15px;
   width: 100%;
   aspect-ratio: 1 / 1; 
-  
-  /* --- NEW SOLID BORDER --- */
-  border: 3px solid #ff5a5a; 
   border-radius: 12px; 
-  background-color: #fff; /* Ensures the inside stays white */
-  /* ------------------------ */
-
-  /* Text Styling */
+  border: 4px solid transparent; 
   font-family: inherit; 
-  font-size: clamp(1rem, 1.75vw, 1.25rem); 
+  font-size: clamp(1rem, 1.8vw, 1.3rem); 
   font-weight: 700;
   color: #333 !important;
   text-decoration: none !important;
   line-height: 1.2;
   overflow: hidden;
   word-wrap: break-word;
+
+  /* The 95% Red / 5% Silver Gradient */
+  background-image: linear-gradient(#fff, #fff), 
+                    linear-gradient(135deg, #ff5a5a 92%, #C0C0C0 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   
   transition: all 0.3s ease;
 }
 
 .gradient-btn:hover {
   transform: scale(1.05);
-  /* Optional: Adds a subtle red glow when hovering */
-  box-shadow: 0 10px 20px rgba(255, 90, 90, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
