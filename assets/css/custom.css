@@ -57,7 +57,7 @@
   
   /* Font settings matching Beautiful Jekyll */
   font-family: inherit; 
-  font-size: clamp(1rem, 1.6vw, 1.2rem); 
+  font-size: clamp(1rem, 1.7vw, 1.25rem); 
   font-weight: 700;
   color: #333 !important;
   text-decoration: none !important;
