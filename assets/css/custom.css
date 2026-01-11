@@ -1,16 +1,11 @@
 #link-grid {
-  display: grid;
-  /* Shrunk the gutter to 15px to pull everything inward */
-  grid-template-columns: 15px repeat(4, minmax(0, 1fr)); 
+  /* Added a matching 15px column at the end */
+  grid-template-columns: 15px repeat(4, minmax(0, 1fr)) 15px; 
   gap: 20px;
-  margin: -30px auto 0 auto; 
-  padding: 0 20px 60px 20px;
-  max-width: 1000px; 
-  align-items: center;
-  
-  /* Centering: Exactly half of the 15px gutter */
-  transform: translateX(-7.5px); 
-  box-sizing: border-box;
+  margin: -30px auto 0 auto;
+  max-width: 1000px;
+  /* Remove the transform entirely! */
+  transform: none; 
 }
 
 /* --- Coordinate Labels --- */
