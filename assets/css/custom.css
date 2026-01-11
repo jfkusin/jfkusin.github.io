@@ -52,10 +52,10 @@
   aspect-ratio: 1 / 1; 
   border-radius: 12px; 
   
-  /* Thicker border as requested previously */
+  /* 3px Border */
   border: 3px solid transparent; 
   
-  /* Font settings matching Beautiful Jekyll */
+  /* Font settings */
   font-family: inherit; 
   font-size: clamp(1rem, 1.7vw, 1.25rem); 
   font-weight: 700;
@@ -65,11 +65,10 @@
   overflow: hidden;
   word-wrap: break-word;
 
-  /* --- NEW GRADIENT --- */
-  /* Layer 1: White background for the inside */
-  /* Layer 2: Gradient from Red (#ff5a5a) to Silver (#C0C0C0) at bottom-right */
+  /* --- ADJUSTED GRADIENT --- */
+  /* Red stays 100% solid until 90%, then blends to silver at the very end */
   background-image: linear-gradient(#fff, #fff), 
-                    linear-gradient(to bottom right, #ff5a5a, #C0C0C0);
+                    linear-gradient(135deg, #ff5a5a 90%, #C0C0C0 100%);
                     
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -79,4 +78,5 @@
 
 .gradient-btn:hover {
   transform: scale(1.05);
-  box-s
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
