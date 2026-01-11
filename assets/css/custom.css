@@ -50,33 +50,28 @@
   padding: 15px;
   width: 100%;
   aspect-ratio: 1 / 1; 
+  
+  /* --- NEW SOLID BORDER --- */
+  border: 3px solid #ff5a5a; 
   border-radius: 12px; 
-  
-  /* 3px Border */
-  border: 3px solid transparent; 
-  
-  /* Font settings */
+  background-color: #fff; /* Ensures the inside stays white */
+  /* ------------------------ */
+
+  /* Text Styling */
   font-family: inherit; 
-  font-size: clamp(1rem, 1.7vw, 1.25rem); 
+  font-size: clamp(1rem, 1.75vw, 1.25rem); 
   font-weight: 700;
   color: #333 !important;
   text-decoration: none !important;
   line-height: 1.2;
   overflow: hidden;
   word-wrap: break-word;
-
-  /* --- ADJUSTED GRADIENT --- */
-  /* Red stays 100% solid until 90%, then blends to silver at the very end */
-  background-image: linear-gradient(#fff, #fff), 
-                    linear-gradient(135deg, #ff5a5a 90%, #C0C0C0 100%);
-                    
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
   
   transition: all 0.3s ease;
 }
 
 .gradient-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  /* Optional: Adds a subtle red glow when hovering */
+  box-shadow: 0 10px 20px rgba(255, 90, 90, 0.2);
 }
